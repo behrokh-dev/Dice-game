@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="assets/stylesheet/output.css">
+    <link rel="stylesheet" href="assets/icon/remixicon.css">
+</head>
+
+<body class="page-bg">
+
+    <p class="turn-indicator" id="turn-indicator">Player's turn🎲</p>
+
+    <div class="board">
+
+        <!-- Player 1 -->
+        <div class="player-card">
+
+            <p class="player-label player-label--p1">PLAYER 1</p>
+            <h2 class="score score--p1" id="score1">00</h2>
+
+            <div class="dice-cube-wrap">
+                <div class="dice-cube" id="cube1">
+                    <div class="face face-1 front"></div>
+                    <div class="face back"></div>
+                    <div class="face right"></div>
+                    <div class="face left"></div>
+                    <div class="face top"></div>
+                    <div class="face bottom"></div>
+                </div>
+            </div>
+
+            <button onclick="roll('user1')" class="roll-btn roll-btn--p1">
+                🎲 Roll Dice
+            </button>
+
+        </div>
+
+        <!-- Player 2 -->
+        <div class="player-card">
+
+            <p class="player-label player-label--p2">PLAYER 2</p>
+            <h2 class="score score--p2" id="score2">00</h2>
+
+            <div class="dice-cube-wrap">
+                <div class="dice-cube" id="cube2">
+                    <div class="face face-1 front"></div>
+                    <div class="face back"></div>
+                    <div class="face right"></div>
+                    <div class="face left"></div>
+                    <div class="face top"></div>
+                    <div class="face bottom"></div>
+                </div>
+            </div>
+
+            <button onclick="roll('user2')" class="roll-btn roll-btn--p2">
+                🎲 Roll Dice
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- صفحه جشن اعلام برنده -->
+    <div class="celebration-overlay hidden" id="celebration">
+        <div class="confetti-field" id="confetti-field"></div>
+        <div class="celebration-content">
+            <p class="crown">👑</p>
+            <h1 class="winner-text" id="winner-text">Player 1 wins!</h1>
+            <button class="restart-btn" onclick="location.reload()">🔄 play Again</button>
+        </div>
+    </div>
+
+    <!-- فوتر -->
+    <footer class="footer-card">
+
+        <div class="avatar">
+            <img src="assets/img/photo_2026-02-20_17-59-51 (2).jpg" alt="Behrokh Naderi">
+        </div>
+
+        <div class="footer-info">
+            <p class="footer-name">Behrokh Naderi</p>
+            <p class="footer-tag">Frontend Developer 💜</p>
+        </div>
+
+        <div class="social-links">
+
+            <a href="https://www.instagram.com/behrokh_dev" target="_blank" class="social-icon social-icon--instagram">
+                <i class="ri-instagram-line"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/behrokh-naderi/" target="_blank" class="social-icon social-icon--linkedin">
+                <i class="ri-linkedin-box-fill"></i>
+            </a>
+
+            <a href="https://github.com/behrokh-dev" target="_blank" class="social-icon social-icon--github">
+                <i class="ri-github-fill"></i>
+            </a>
+
+            <a href="mailto:naderibehrokh@gmail.com" target="_blank" class="social-icon social-icon--github">
+                <i class="ri-google-fill"></i>
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+
+<script src="assets/javascript/master.js"></script>
+</html>
