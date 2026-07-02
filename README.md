@@ -9,7 +9,7 @@ A simple, interactive, and responsive dice game built with **HTML**, **CSS**, an
 ## 📸 Preview
 <img width="1920" height="747" alt="Image" src="https://github.com/user-attachments/assets/7ffe9de9-ca87-42f1-b360-4049e34267d7" />
 <img width="1920" height="869" alt="Image" src="https://github.com/user-attachments/assets/494f99b3-b479-4c4e-8364-8578ff177f96" />
-
+<img width="1920" height="570" alt="Image" src="https://github.com/user-attachments/assets/5522114f-fc79-4800-a5ff-01d0d591d52e" />
 
 ## ✨ Features
 
